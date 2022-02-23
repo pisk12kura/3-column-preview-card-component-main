@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --sedansbackground: hsl(31, 77%, 52%);
+    --suvsbackground: hsl(184, 100%, 22%);
+    --luxurybackground: hsl(179, 100%, 13%);
+    --paragraphscolor: hsla(0, 0%, 100%, 0.75);
+    --backgroundheadingsbuttons: hsl(0, 0%, 95%);
+   
+}
+
+body {
+    font-family: "Lexend Deca",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.headings {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 40px;
+    color: var(--backgroundheadingsbuttons);
+    display: flex;
+    margin-top: 2rem;
+}
+
+p {
+    font-size: 15px;
+    color: var(--paragraphscolor);
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.psedans {
+    padding-right: 2rem;
+}
+
+main {
+    width: 1000px;
+    height: 480px;
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+}
+
+.sedans {
+    background-color: var(--sedansbackground);
+    padding: 3rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.suvs {
+    background-color: var(--suvsbackground);
+    padding: 3rem;
+}
+
+.luxury {
+    background-color: var(--luxurybackground);
+    padding: 3rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.asedans {
+    color: var(--sedansbackground);
+    border: 2px solid var(--backgroundheadingsbuttons);
+    border-radius: 3rem 3rem;
+    background-color: var(--backgroundheadingsbuttons);
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.asuvs {
+    color: var(--suvsbackground);
+    border: 2px solid var(--backgroundheadingsbuttons);
+    border-radius: 3rem 3rem;
+    background-color: var(--backgroundheadingsbuttons);
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.aluxury {
+    color: var(--luxurybackground);
+    border: 2px solid var(--backgroundheadingsbuttons);
+    border-radius: 3rem 3rem;
+    background-color: var(--backgroundheadingsbuttons);
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.asedans:hover,
+.asedans:active {
+    color: var(--backgroundheadingsbuttons);
+    background-color: transparent;
+}
+
+.asuvs:hover,
+.asuvs:active {
+    color: var(--backgroundheadingsbuttons);
+    background-color: transparent;
+}
+
+.aluxury:hover,
+.aluxury:active {
+    color: var(--backgroundheadingsbuttons);
+    background-color: transparent;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
